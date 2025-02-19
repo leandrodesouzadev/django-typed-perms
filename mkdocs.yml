@@ -1,4 +1,5 @@
 site_name: django-typed-perms
+site_url: https://leandrodesouzadev.github.io/django-typed-perms/
 theme: 
   name: material
   features:
