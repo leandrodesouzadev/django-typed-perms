@@ -1,6 +1,7 @@
 name: Publish to pypi
 on:
-  - release
+  release:
+    types: [published]
 
 jobs:
   publish-to-pipy:
@@ -18,5 +19,8 @@ jobs:
         with:
           python-version-file: "pyproject.toml"
       
+      - name: "Build package"
+        run: uv build
+
       - name: "Publish package"
         run: uv publish
