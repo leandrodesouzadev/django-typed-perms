@@ -1,0 +1,30 @@
+site_name: django-typed-perms
+theme: 
+  name: material
+  features:
+    - navigation.instant
+    - navigation.index
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.annotate
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+
+nav:
+  - Home:
+    - index.md
+  - Installation:
+    - installation.md
+  - Reference:
+    - ref/index.md
+    - TypedModelPermsMixin: 
+      - Generic syntax: ref/TypedModelPermsMixin/generic_syntax.md
+      - Public methods: ref/TypedModelPermsMixin/public_methods.md
